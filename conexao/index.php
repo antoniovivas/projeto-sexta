@@ -120,7 +120,7 @@
       </div>
       <div class="col-12 ">
         <ul class="col-12 text-center precos">
-          <li class="col-3">R$00,00 <a href=""><img id="carrinho" src="img/carrinho1.png" alt=""></a></li>
+          <li class="col-3">R$00,00 <a href=""><img id="carrinho" src="img/carrinho.png" alt=""></a></li>
           <li class="col-3">R$00,00 <a href=""><img id="carrinho" src="img/carrinho.png" alt=""></a></li>
           <li class="col-3">R$00,00 <a href=""><img id="carrinho" src="img/carrinho.png" alt=""></a></li>
           <li class="col-3">R$00,00 <a href=""><img id="carrinho" src="img/carrinho.png" alt=""></a></li>
