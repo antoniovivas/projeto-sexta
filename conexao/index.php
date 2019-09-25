@@ -4,6 +4,12 @@
   $consulta = "SELECT * FROM cadastro";
   $con = $conec->query($consulta) or die ($conec->error);
 ?>
+<?php 
+  include ("processo.php");
+  if (!isset($_POST['email'])) {
+    echo "email invalido";
+}
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -37,8 +43,8 @@
                 </button>
                 <form class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <div id="drop">
-                    <input type="email" placeholder="Login">
-                    <input type="password" placeholder="Senha">
+                    <input type="email" name="email" placeholder="Login" required>
+                    <input type="password" name="senha" placeholder="Senha" required>
                     <input type="submit">
                   </div>
                   <a href="registro.php">Registre-se</a>
@@ -62,22 +68,22 @@
           <div class="collapse navbar-collapse justify-content-center" id="colecao">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Coleção <span class="sr-only">(Página atual)</span></a>
+                <a class="nav-link" href="tabela.php">Coleção</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#">Coleção</a>
+                <a class="nav-link" href="tabela.php">Coleção</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#">Coleção</a>
+                <a class="nav-link" href="tabela.php">Coleção</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#">Coleção</a>
+                <a class="nav-link" href="tabela.php">Coleção</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#">Coleção</a>
+                <a class="nav-link" href="tabela.php">Coleção</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#">Coleção</a>
+                <a class="nav-link" href="tabela.php">Coleção</a>
               </li>
             </ul>
           </div>
