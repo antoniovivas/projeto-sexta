@@ -1,16 +1,3 @@
-<?php 
-  include ("conexao1/conexao.php"); 
-
-  $consulta = "SELECT * FROM cadastro";
-  $con = $conec->query($consulta) or die ($conec->error);
-?>
-<?php 
-  include ("processo.php");
-  if (!isset($_POST['email'])) {
-    echo "email invalido";
-}
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -171,6 +158,9 @@
       <br>
       
     </section>
+    <footer>
+    <a href="tabela.php">TABELA</a>
+    </footer>
     <!-- JavaScript (Opcional) -->
     <link rel="stylesheet" href="javascript/script.js">
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
