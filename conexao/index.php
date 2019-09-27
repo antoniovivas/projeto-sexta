@@ -1,3 +1,8 @@
+<?php 
+  include("conexao1/conexao.php");
+  include("processologin.php");
+  
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -28,7 +33,7 @@
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Login
                 </button>
-                <form class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <form class="dropdown-menu" aria-labelledby="dropdownMenuButton" method="POST">
                   <div id="drop">
                     <input type="email" name="email" placeholder="Login" required>
                     <input type="password" name="senha" placeholder="Senha" required>
@@ -55,22 +60,22 @@
           <div class="collapse navbar-collapse justify-content-center" id="colecao">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="tabela.php">Coleção</a>
+                <a class="nav-link" href="">Coleção</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="tabela.php">Coleção</a>
+                <a class="nav-link" href="">Coleção</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="tabela.php">Coleção</a>
+                <a class="nav-link" href="">Coleção</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="tabela.php">Coleção</a>
+                <a class="nav-link" href="">Coleção</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="tabela.php">Coleção</a>
+                <a class="nav-link" href="">Coleção</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="tabela.php">Coleção</a>
+                <a class="nav-link" href="">Coleção</a>
               </li>
             </ul>
           </div>
@@ -159,7 +164,8 @@
       
     </section>
     <footer>
-    <a href="tabela.php">TABELA</a>
+    <a href="loginadm.php">TABELA</a>
+    <a href="tabelaclient.php">TABELA CLIENTE</a>
     </footer>
     <!-- JavaScript (Opcional) -->
     <link rel="stylesheet" href="javascript/script.js">

@@ -1,5 +1,6 @@
 <?php
   include("conexao1/conexao.php"); 
+  include("processoadm.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,15 +8,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/tabela.css">
   <title>Tabela</title>
+  <link rel="stylesheet" href="css/geral.css">
 </head>
 <body>
 <h1>Lista de Usuários</h1>
 <table border='2'>
 <?php 
-  
-
   $resultado2 = mysqli_query ($conec, "SELECT * FROM cadastro");
 
   echo "<tr>
