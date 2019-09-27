@@ -6,8 +6,17 @@
         $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
         $senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_STRING);
         
-        $resultado = "INSERT INTO cadastro (nome, email, senha) VALUES('$nome', '$email', '$senha')";
-        $result = mysqli_query($conec, $resultado);
+        
+        $sql = "SELECT * FROM cadastro WHERE email = '{$_POST['email']}'";
+        $result2 = mysqli_query($conec, $sql);
+        $row = mysqli_num_rows($result2);
+        if($row > 0){
+           echo"<h2>Usuario ja cadastrado!</h2>";
+        }else{
+            $resultado = "INSERT INTO cadastro (nome, email, senha) VALUES('$nome', '$email', '$senha')";
+            $result = mysqli_query($conec, $resultado);
+            echo"<h2> Cadastro realizado com sucesso! </h2>";
         }
+    }
 
 ?>

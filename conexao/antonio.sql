@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.8.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 27-Set-2019 às 18:36
--- Versão do servidor: 10.4.6-MariaDB
--- versão do PHP: 7.3.9
+-- Generation Time: 27-Set-2019 às 21:18
+-- Versão do servidor: 10.1.33-MariaDB
+-- PHP Version: 7.2.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `antonio`
+-- Database: `antonio`
 --
 
 -- --------------------------------------------------------
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `adm` (
   `id` int(11) NOT NULL,
-  `nome` varchar(20) NOT NULL,
+  `nome` varchar(40) NOT NULL,
   `email` varchar(40) NOT NULL,
   `senha` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -50,22 +50,21 @@ INSERT INTO `adm` (`id`, `nome`, `email`, `senha`) VALUES
 
 CREATE TABLE `cadastro` (
   `id` int(11) NOT NULL,
-  `nome` text NOT NULL,
-  `email` text NOT NULL,
-  `senha` text NOT NULL
+  `email` varchar(40) NOT NULL,
+  `nome` varchar(40) NOT NULL,
+  `senha` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `cadastro`
 --
 
-INSERT INTO `cadastro` (`id`, `nome`, `email`, `senha`) VALUES
-(317, 'antonio', 'juninhovivas1@outlook.com', '1234'),
-(318, 'antonio', 'juninhovivas1@outlook.com', '1234'),
-(319, 'antonio', 'juninhovivas1@outlook.com', '1234'),
-(333, 'dsadsa', 'dsadas@dasda', 'dasdsa'),
-(334, 'antonio', 'antonio.vivas@praxisjr.com.br', '12345'),
-(335, 'antonio', 'antonio.vivas@praxisjr.com.br', '1345');
+INSERT INTO `cadastro` (`id`, `email`, `nome`, `senha`) VALUES
+(46, 'antonio.vivas@praxisjr.com.br', 'antonio', '1234'),
+(47, 'dashbdsa@aoksinfda.com', 'antonio', '1234'),
+(49, '123@123', 'antonio', '123'),
+(50, '1234@123', '123', '123'),
+(51, 'asdfasda@fadsa', 'ads', '1234');
 
 -- --------------------------------------------------------
 
@@ -75,8 +74,8 @@ INSERT INTO `cadastro` (`id`, `nome`, `email`, `senha`) VALUES
 
 CREATE TABLE `tarefas` (
   `id` int(11) NOT NULL,
-  `tarefa` varchar(100) NOT NULL,
-  `prazo` varchar(10) NOT NULL
+  `tarefa` varchar(40) NOT NULL,
+  `prazo` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -84,52 +83,54 @@ CREATE TABLE `tarefas` (
 --
 
 INSERT INTO `tarefas` (`id`, `tarefa`, `prazo`) VALUES
-(14, 'comer', '2019-09-04'),
-(15, 'dormir', '2019-09-12');
+(2, 'comer', '2019-09-03'),
+(3, 'comer', '2019-09-03'),
+(4, 'dormir', '2019-09-11'),
+(5, 'dormir', '2019-09-11');
 
 --
--- Índices para tabelas despejadas
+-- Indexes for dumped tables
 --
 
 --
--- Índices para tabela `adm`
+-- Indexes for table `adm`
 --
 ALTER TABLE `adm`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `cadastro`
+-- Indexes for table `cadastro`
 --
 ALTER TABLE `cadastro`
-  ADD PRIMARY KEY (`id`) USING BTREE;
+  ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `tarefas`
+-- Indexes for table `tarefas`
 --
 ALTER TABLE `tarefas`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `adm`
+-- AUTO_INCREMENT for table `adm`
 --
 ALTER TABLE `adm`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `cadastro`
+--
+ALTER TABLE `cadastro`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+
+--
+-- AUTO_INCREMENT for table `tarefas`
+--
+ALTER TABLE `tarefas`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT de tabela `cadastro`
---
-ALTER TABLE `cadastro`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=336;
-
---
--- AUTO_INCREMENT de tabela `tarefas`
---
-ALTER TABLE `tarefas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

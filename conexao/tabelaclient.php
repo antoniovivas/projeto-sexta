@@ -1,5 +1,4 @@
 <?php
-  include("conexao1/conexao.php"); 
   include("deleta.php");
   include("pesquisa.php");
 ?>
@@ -34,14 +33,12 @@
   <input type="submit" value="Deletar">
 </form>
 <br>
-<h1>Lista de Usuários</h1>
+<h1 class="text-center">Lista de Tarefas</h1>
 <table border='2'>
 
 
 <!--PROCESSO DE ENVIO DE DADOS-->
 <?php
-    include("conexao1/conexao.php");
-    
     if(!empty($_POST['tarefa']) || !empty($_POST['prazo'])) {
         $tarefa = filter_input(INPUT_POST, 'tarefa', FILTER_SANITIZE_STRING);
         $prazo = filter_input(INPUT_POST, 'prazo', FILTER_SANITIZE_STRING);

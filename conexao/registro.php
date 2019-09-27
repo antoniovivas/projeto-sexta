@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="css/geral.css">
 </head>
 <body>
-    <form action="" method="POST">
+<h1>Registre-se!</h1>
+    <form  method="POST" action="">
         Nome: <input type="text" name="nome" placeHolder=" Digite seu nome" > <br> <br>
         E-mail: <input type="email" name="email" placeholder="exemplo@hotmail.com" > <br> <br>
-        Senha: <input type="password" name="senha" placeholder="senha" > <br>
+        Senha: <input type="password" name="senha" placeholder="senha" >
         <input type="submit">
     </form>
-    <a href="index.php">Pagina inicial</a>
+    <br>
+    <button><a href="index.php">Pagina inicial</a></button>
 </body>
 </html>

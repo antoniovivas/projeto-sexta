@@ -14,11 +14,9 @@
 <body>
     <h1>Digite Email e Senha do Administrador!</h1>
     <form action="" method="POST">
-        Nome: <input type="text" name="nome"> <br> <br>
         E-mail: <input type="email" name="email"> <br> <br>
         Senha: <input type="password" name="senha">
                 <input type="submit">
     </form>
-    <a href="tabela.php"></a>
 </body>
 </html>

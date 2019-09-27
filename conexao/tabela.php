@@ -39,6 +39,6 @@
   }
 ?>
 </table>
-<a href="tabelabaixar.php">Faça o download!</a>
+<button> <a href="tabelabaixar.php">Faça o download!</a> </button>
 </body>
 </html>
