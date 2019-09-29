@@ -7,7 +7,7 @@
         $result2 = mysqli_query($conec, $sql);
         $row = mysqli_num_rows($result2);
         if($row > 0){
-           echo"login efetuado com sucesso";
+           header("Location: tabelaclient.php");
         }else{
             header('Location: registro.php');
         }

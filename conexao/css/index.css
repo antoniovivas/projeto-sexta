@@ -1,0 +1,52 @@
+
+section{
+    font-size: 100%;
+    padding-top: 5%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+nav{
+    background-color: rgba(120, 29, 194, 0.5);
+}
+.login{
+    background-color: rgb(255, 230, 0);
+}
+input{
+    border: none;
+    border-bottom: solid black 1px;
+}
+.enviar{
+    border-radius: 10%;
+    background-image: linear-gradient(white ,rgb(255, 230, 0));
+}
+
+.reg{
+    color: black;
+    border-bottom: solid black 1px;
+    text-decoration: none;
+}
+h1{
+    padding-bottom: 3%;
+}
+#coleção{
+    width: 100%;
+}
+img{
+    width: 100%;
+}
+div{
+    width: 100%;
+}
+.logo{
+    width: 50%;
+}
+li{
+    list-style: none;
+    width: 100%;
+}
+.fotos, .precos{
+    display: flex;
+    flex-direction: row;
+}
+#carrinho{
+    width: 2vw;
+}

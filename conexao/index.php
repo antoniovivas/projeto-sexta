@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
 
@@ -30,22 +30,23 @@
         <ul class="navbar-nav">
           <li class="nav-item active">
               <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="login btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Login
                 </button>
                 <form class="dropdown-menu" aria-labelledby="dropdownMenuButton" method="POST">
                   <div id="drop">
                     <input type="email" name="email" placeholder="Login" required>
                     <input type="password" name="senha" placeholder="Senha" required>
-                    <input type="submit">
+                    <input type="submit" class="enviar">
                   </div>
-                  <a href="registro.php">Registre-se</a>
+                  <a href="registro.php" class="reg">Registre-se</a>
                 </form>
               </div>
             </li>
           <li class="nav-item active">
             <a class="nav-link" href="#modelos">Novidades</a>
           </li>
+          
         </ul>
       </div>
     </nav>
@@ -165,7 +166,6 @@
     </section>
     <footer>
     <a href="loginadm.php">TABELA</a>
-    <a href="tabelaclient.php">TABELA CLIENTE</a>
     </footer>
     <!-- JavaScript (Opcional) -->
     <link rel="stylesheet" href="javascript/script.js">

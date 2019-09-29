@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+body{
+    background-image: url(../img/images.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+p{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+#reg, h1, a{
+    display: flex;
+    justify-content: center;
+}
+input{
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+#enviar{
+    display: flex;
+    justify-content: center;
+}
+.enviar{
+    background-color: rgb(255, 73, 112);
+    border-radius: 5%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+.ajuste{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+.back{
+    width: 33%;
+    background-color: rgba(0, 0, 0, 0.685);
+}
+table{
+    background-color: rgba(0, 0, 0, 0.589);
+}
+a{
+    color: white;
+}
+#btab{
+    background-color: rgb(255, 73, 112);
+    border-radius: 5%;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 18px;
+}
+#pagtab, .btbaixar{
+    display: flex;
+    justify-content: center;
+}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    body{
+        font-size: 12px;
+    }
+    p{
+        font-size: 24px;
+    }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    body{
+        font-size: 14px;
+    }
+    p{
+        font-size: 28px;
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    body{
+        font-size: 9px;
+    }
+    p{
+        font-size: 18px;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    body{
+        font-size: 7px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
